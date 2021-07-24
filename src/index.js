@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Intro from './Intro';
+import About from './About';
+import Projects from './Projects';
+import TechStack from './TechStack';
+import Experience from './Experience';
+import Footer from './Footer';
+import Sidebar from './Sidebar';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Intro />
+    <About />
+    <Projects />
+    <TechStack />
+    <Experience />
+    <Footer />
+    <Sidebar />
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
