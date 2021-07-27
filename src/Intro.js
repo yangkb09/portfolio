@@ -1,9 +1,13 @@
 import React from 'react';
+import styled from 'styled-components'
 
+const ImportContainer = styled.div`
+  color: purple;
+`
 
 export const Intro = () => {
   return (
-    <div>Placeholder for Intro</div>
+      <ImportContainer>Placeholder for Intro</ImportContainer>
   )
 }
 
