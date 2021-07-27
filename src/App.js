@@ -15,7 +15,8 @@ const Container = styled.div`
   min-height: 100vh;
   font-size: 16px;
   padding: 10rem;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
 `
 
 export const App = () => {

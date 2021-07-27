@@ -8,12 +8,18 @@ const ImportContainer = styled.div`
 `
 const Image = styled.img`
   border-radius: 50%;
-  max-width: 25%;
+  max-width: 33%;
   box-shadow: 4px 4px white;
+  float: left;
 `
 
-const Header = styled.div`
-  /* float: left; */
+const HeaderContainer = styled.div`
+  float: left;
+  align-items: center;
+`
+const HeaderText = styled.div`
+  position: absolute;
+  right: 20px
 `
 
 const Subheader = styled.div`
@@ -31,15 +37,17 @@ const Greeting = styled.span`
 export const Intro = () => {
   return (
       <ImportContainer>
-        <Header>
+        <HeaderContainer>
           <Image
             src="/katpic.jpg"
             alt="Kat looking directly at camera in black t-shirt and gold necklace"
           />
-          <Subheader>Nice to meet you,</Subheader>
-          <Greeting>I'm Kat Yang!</Greeting>
-          <Subheader>I'm a Fullstack Software Engineer and former social scientist</Subheader>
-        </Header>
+          <HeaderText>
+            <Subheader>Nice to meet you,</Subheader>
+            <Greeting>I'm Kat Yang!</Greeting>
+          </HeaderText>
+        </HeaderContainer>
+        <Subheader>I'm a Fullstack Software Engineer and former social scientist.</Subheader>
       </ImportContainer>
   )
 }
