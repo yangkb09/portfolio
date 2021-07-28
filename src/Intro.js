@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components/macro'
 
-const ImportContainer = styled.div`
+const IntroContainer = styled.div`
   font-size: 3rem;
   font-weight: bold;
-
+  position: relative;
 `
 const Image = styled.img`
   border-radius: 50%;
   max-width: 33%;
-  box-shadow: 4px 4px white;
+  box-shadow: 4px 4px #7289da;
   float: left;
 `
 
@@ -18,8 +18,9 @@ const HeaderContainer = styled.div`
   align-items: center;
 `
 const HeaderText = styled.div`
-  position: absolute;
-  right: 20px
+  /* position: absolute;
+  top: 350px;
+  left: 350px; */
 `
 
 const Subheader = styled.div`
@@ -36,7 +37,7 @@ const Greeting = styled.span`
 
 export const Intro = () => {
   return (
-      <ImportContainer>
+      <IntroContainer>
         <HeaderContainer>
           <Image
             src="/katpic.jpg"
@@ -48,7 +49,7 @@ export const Intro = () => {
           </HeaderText>
         </HeaderContainer>
         <Subheader>I'm a Fullstack Software Engineer and former social scientist.</Subheader>
-      </ImportContainer>
+      </IntroContainer>
   )
 }
 
