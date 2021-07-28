@@ -8,7 +8,7 @@ const projectList = [
     description: 'Web application enabling users to gauge sentiment of Twitter users through machine learning.',
     role: 'Solo Developer',
     projectUrl: 'https://tweetermeter.herokuapp.com/',
-    githubURL: 'https://github.com/yangkb09/TweeterMeter',
+    githubUrl: 'https://github.com/yangkb09/TweeterMeter',
     techStack: 'JavaScript, Twitter API, Google Cloud Natural Language API, Express, React, Redux, CSS, Heroku',
   },
   {
@@ -18,7 +18,7 @@ const projectList = [
     description: 'Progressive web application allowing users to split bills and track shared expenses.',
     role: 'Fullstack Developer',
     projectUrl: 'https://mytab-ghp.herokuapp.com/signup',
-    githubURL: 'https://github.com/yangkb09/MyTab',
+    githubUrl: 'https://github.com/yangkb09/MyTab',
     techStack: 'JavaScript, Express, Sequelize, PostgreSQL, React, Redux, Ant Design, Amazon OAuth, Currency.js, Heroku',
   },
   {
@@ -28,7 +28,7 @@ const projectList = [
     description: 'E-commerce real estate web application allowing customers to browse getaway homes.',
     role: 'Fullstack Developer',
     projectUrl: 'https://virtual-realty.herokuapp.com/',
-    githubURL: 'https://github.com/yangkb09/GraceShopper',
+    githubUrl: 'https://github.com/yangkb09/GraceShopper',
     techStack: 'JavaScript, Express, Sequelize, PostgreSQL, React, Redux, CSS, Heroku',
   }
 ]
