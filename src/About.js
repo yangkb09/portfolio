@@ -14,7 +14,7 @@ export const About = () => {
   return (
     <>
       <AboutText>
-        In February of 2021, I graduated from the Grace Hopper Program at Fullstack Academy and recently completed a teaching fellowship with them. I'm proficient in fullstack web development using <Highlight>JavaScript</Highlight> with <Highlight>Node.js, Express, React, Redux,</Highlight> and <Highlight>PostgreSQL</Highlight>.
+        As a recent Teaching Fellow and graduate of the <Highlight>Grace Hopper Program</Highlight> at Fullstack Academy, I'm proficient in fullstack web development using <Highlight>JavaScript</Highlight> with <Highlight>Node.js, Express, React, Redux,</Highlight> and <Highlight>PostgreSQL</Highlight>.
       </AboutText>
       <AboutText>
         I'm currently looking for full-time software engineer roles.
