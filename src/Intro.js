@@ -4,7 +4,9 @@ import styled from 'styled-components/macro'
 const IntroContainer = styled.div`
   font-size: 3rem;
   font-weight: bold;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
 `
 const Image = styled.img`
   border-radius: 50%;
@@ -14,8 +16,8 @@ const Image = styled.img`
 `
 
 const HeaderContainer = styled.div`
-  float: left;
-  align-items: center;
+  /* float: left; */
+  /* align-items: center; */
 `
 const HeaderText = styled.div`
   /* position: absolute;
@@ -31,7 +33,7 @@ const Greeting = styled.span`
   font-size: 5rem;
   font-weight: bold;
   text-shadow: 4px 4px #7289da;
-  align-items: center;
+  /* align-items: center; */
 `
 
 export const Intro = () => {
@@ -47,7 +49,7 @@ export const Intro = () => {
             <Greeting>I'm Kat Yang!</Greeting>
           </HeaderText>
         </HeaderContainer>
-        <Subheader>they/she</Subheader>
+        <Subheader>(they/she)</Subheader>
         <Subheader>I'm a Fullstack Software Engineer and former social scientist.</Subheader>
       </IntroContainer>
   )

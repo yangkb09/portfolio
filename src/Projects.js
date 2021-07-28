@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import projectList from './data/projectList'
 
 const Container = styled.div`
-
+  display: flex;
 `
 
 const SectionHeader = styled.div`
