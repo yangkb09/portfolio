@@ -37,8 +37,10 @@ const Text = styled.div`
 `
 const Button = styled.button`
   display: inline-block;
+  background-color: #7289da;
+  text-decoration: none;
   color: white;
-  font-size: 1em;
+  font-weight: bold;
   margin: 1em;
   padding: 0.25em 1em;
   border: 2px solid #7289da;
