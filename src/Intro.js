@@ -32,7 +32,6 @@ const Greeting = styled.span`
   font-weight: bold;
   text-shadow: 4px 4px #7289da;
   align-items: center;
-  align-items: center;
 `
 
 export const Intro = () => {
@@ -48,6 +47,7 @@ export const Intro = () => {
             <Greeting>I'm Kat Yang!</Greeting>
           </HeaderText>
         </HeaderContainer>
+        <Subheader>they/she</Subheader>
         <Subheader>I'm a Fullstack Software Engineer and former social scientist.</Subheader>
       </IntroContainer>
   )
