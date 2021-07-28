@@ -1,4 +1,4 @@
-import fruitStock from '../../public/fruitStock.jpg'
+import fruitStock from '../images/fruitStock.jpg'
 
 const projectList = [
   {

@@ -9,7 +9,7 @@ const IntroContainer = styled.div`
 const Image = styled.img`
   border-radius: 50%;
   max-width: 33%;
-  box-shadow: 4px 4px #7289da;
+  box-shadow: 8px 8px #7289da;
   float: left;
 `
 
