@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const AboutText = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
@@ -12,7 +17,7 @@ const Highlight = styled.span`
 
 export const About = () => {
   return (
-    <>
+    <Container>
       <AboutText>
         As a recent Teaching Fellow and graduate of the <Highlight>Grace Hopper Program</Highlight> at Fullstack Academy, I'm proficient in fullstack web development using <Highlight>JavaScript</Highlight> with <Highlight>Node.js, Express, React, Redux,</Highlight> and <Highlight>PostgreSQL</Highlight>.
       </AboutText>
@@ -22,8 +27,7 @@ export const About = () => {
       <AboutText>
         When not debugging code, you can find me in my garden, the pottery studio, or outside taking film photos.
       </AboutText>
-
-    </>
+    </Container>
   )
 }
 
