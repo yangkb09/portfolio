@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import proficientSkillsList from './data/skills/proficientSkillsList'
 import familiarSkillsList from './data/skills/familiarSkillsList'
 import languageList from './data/skills/languageList'
+import languageImg from './images/skills/language.png'
 
 const Container = styled.div`
   display: flex;
@@ -26,8 +27,10 @@ const Text = styled.div`
 `
 
 const Image = styled.img`
+  max-width: 5%;
 `
 const ReactIcon = styled.div`
+  font-size: 50px;
 `
 
 export const Skills = () => {
@@ -39,7 +42,7 @@ export const Skills = () => {
         {proficientSkillsList.map((skill) => {
           return (
             <div key={skill.name}>
-              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Project image'/>}
+              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Proficient skill image'/>}
               {skill.name}
             </div>
           )
@@ -47,9 +50,10 @@ export const Skills = () => {
       </Text>
       <SubHeader>Familiar</SubHeader>
       <Text>
-      {familiarSkillsList.map((skill) => {
+        {familiarSkillsList.map((skill) => {
           return (
             <div key={skill.name}>
+              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Familiar skill image'/>}
               {skill.name}
             </div>
           )
@@ -57,7 +61,8 @@ export const Skills = () => {
       </Text>
       <SubHeader>Languages</SubHeader>
       <Text>
-      {languageList.map((language) => {
+      <Image src={languageImg} alt='Language image'/>
+        {languageList.map((language) => {
           return (
             <div key={language.name}>
               {language.name}
