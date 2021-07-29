@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-// import { proficientSkillsList, familiarSkillsList, languageList } from './data/skills'
 import proficientSkillsList from './data/skills/proficientSkillsList'
 import familiarSkillsList from './data/skills/familiarSkillsList'
 import languageList from './data/skills/languageList'
@@ -22,11 +21,16 @@ const SubHeader = styled.div`
 
 const Text = styled.div`
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 1rem;
 `
 
-export const TechStack = () => {
+const Image = styled.img`
+`
+const ReactIcon = styled.div`
+`
+
+export const Skills = () => {
   return (
     <Container>
       <SectionHeader>Skills</SectionHeader>
@@ -35,6 +39,7 @@ export const TechStack = () => {
         {proficientSkillsList.map((skill) => {
           return (
             <div key={skill.name}>
+              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Project image'/>}
               {skill.name}
             </div>
           )
@@ -64,4 +69,4 @@ export const TechStack = () => {
   )
 }
 
-export default TechStack;
+export default Skills;
