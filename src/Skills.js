@@ -5,9 +5,6 @@ import familiarSkillsList from './data/skills/familiarSkillsList'
 import languageList from './data/skills/languageList'
 import {Language} from '@styled-icons/fa-solid/Language'
 
-import { Icon, InlineIcon } from '@iconify/react';
-import sequelizeIcon from '@iconify-icons/file-icons/sequelize';
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;

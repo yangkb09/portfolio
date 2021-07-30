@@ -4,7 +4,6 @@ import { SiHtml5 } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { SiNodeDotJs } from 'react-icons/si';
 import {Express} from '@styled-icons/simple-icons/Express'
-import sequelize from '../../images/skills/sequelize-icon.png'
 import { SiPostgresql } from 'react-icons/si';
 import { SiReact } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
