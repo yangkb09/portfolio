@@ -5,6 +5,8 @@ import familiarSkillsList from './data/skills/familiarSkillsList'
 import languageList from './data/skills/languageList'
 import {Language} from '@styled-icons/fa-solid/Language'
 
+import { Icon, InlineIcon } from '@iconify/react';
+import sequelizeIcon from '@iconify-icons/file-icons/sequelize';
 
 const Container = styled.div`
   display: flex;
@@ -28,10 +30,10 @@ const Text = styled.div`
 `
 
 const Image = styled.img`
-  max-width: 5%;
+  max-width: 4%;
 `
 const ReactIcon = styled.div`
-  font-size: 50px;
+  font-size: 4rem;
 `
 
 const SmallLanguage = styled(Language)`
@@ -44,6 +46,7 @@ export const Skills = () => {
       <SectionHeader>Skills</SectionHeader>
       <SubHeader>Proficient</SubHeader>
       <Text>
+      {/* <Icon icon={sequelizeIcon} color="white" /> */}
         {proficientSkillsList.map((skill) => {
           return (
             <div key={skill.name}>
