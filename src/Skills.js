@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import proficientSkillsList from './data/skills/proficientSkillsList'
 import familiarSkillsList from './data/skills/familiarSkillsList'
 import languageList from './data/skills/languageList'
-import languageImg from './images/skills/language.png'
+import {Language} from '@styled-icons/fa-solid/Language'
+
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +32,10 @@ const Image = styled.img`
 `
 const ReactIcon = styled.div`
   font-size: 50px;
+`
+
+const SmallLanguage = styled(Language)`
+  max-width: 4%;
 `
 
 export const Skills = () => {
@@ -61,7 +66,7 @@ export const Skills = () => {
       </Text>
       <SubHeader>Languages</SubHeader>
       <Text>
-      <Image src={languageImg} alt='Language image'/>
+      <SmallLanguage />
         {languageList.map((language) => {
           return (
             <div key={language.name}>

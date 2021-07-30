@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-import {Express} from '@styled-icons/simple-icons/Express'
-
 import { SiJavascript } from 'react-icons/si';
 import { SiHtml5 } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { SiNodeDotJs } from 'react-icons/si';
-// import express from '../../images/skills/express.png'
+import {Express} from '@styled-icons/simple-icons/Express'
 import sequelize from '../../images/skills/sequelize.png'
 import { SiPostgresql } from 'react-icons/si';
 import { SiReact } from 'react-icons/si';
@@ -14,7 +12,7 @@ import { SiGit } from 'react-icons/si';
 import { SiGithub } from 'react-icons/si';
 
 const SmallExpress = styled(Express)`
-  max-width: 4%
+  max-width: 4%;
 `
 
 const proficientSkillsList = [
