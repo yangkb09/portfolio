@@ -13,8 +13,8 @@ import { SiRedux } from 'react-icons/si';
 import { SiGit } from 'react-icons/si';
 import { SiGithub } from 'react-icons/si';
 
-const WhiteExpress = styled(Express)`
-  color: white;
+const SmallExpress = styled(Express)`
+  max-width: 4%
 `
 
 const proficientSkillsList = [
@@ -22,7 +22,7 @@ const proficientSkillsList = [
   {name: 'HTML', image: <SiHtml5 />, reactIcon: true},
   {name: 'CSS', image: <SiCss3 />, reactIcon: true},
   {name: 'Node.js', image: <SiNodeDotJs />, reactIcon: true},
-  {name: 'Express', image: WhiteExpress, reactIcon: false},
+  {name: 'Express', image: <SmallExpress />, reactIcon: true},
   {name: 'Sequelize', image: sequelize, reactIcon: false},
   {name: 'PostgreSQL', image: <SiPostgresql />, reactIcon: true},
   {name: 'React', image: <SiReact />, reactIcon: true},
