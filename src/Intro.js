@@ -46,7 +46,7 @@ export const Intro = () => {
           />
           <HeaderText>
             <Subheader>Nice to meet you,</Subheader>
-            <Greeting>I'm Kat Yang!</Greeting>
+            <Greeting>I'm Katarina Yang!</Greeting>
           </HeaderText>
         </HeaderContainer>
         <Subheader>(they/she)</Subheader>
