@@ -20,9 +20,10 @@ const SubHeader = styled.div`
   font-weight: bold;
 `
 
-const Text = styled.div`
+const SkillsGrid = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   font-size: 1.5rem;
-  /* font-weight: bold; */
   padding: 1rem;
 `
 
@@ -34,7 +35,7 @@ const ReactIcon = styled.div`
 `
 
 const SmallLanguage = styled(Language)`
-  max-width: 4%;
+  max-width: 25%;
 `
 
 export const Skills = () => {
@@ -42,31 +43,30 @@ export const Skills = () => {
     <Container>
       <SectionHeader>Skills</SectionHeader>
       <SubHeader>Proficient</SubHeader>
-      <Text>
-      {/* <Icon icon={sequelizeIcon} color="white" /> */}
-        {proficientSkillsList.map((skill) => {
-          return (
-            <div key={skill.name}>
-              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Proficient skill image'/>}
-              {skill.name}
-            </div>
-          )
-        })}
-      </Text>
+        <SkillsGrid>
+          {proficientSkillsList.map((skill) => {
+            return (
+              <div key={skill.name}>
+                {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Proficient skill image'/>}
+                {skill.name}
+              </div>
+            )
+          })}
+        </SkillsGrid>
       <SubHeader>Familiar</SubHeader>
-      <Text>
-        {familiarSkillsList.map((skill) => {
-          return (
-            <div key={skill.name}>
-              {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Familiar skill image'/>}
-              {skill.name}
-            </div>
-          )
-        })}
-      </Text>
+        <SkillsGrid>
+          {familiarSkillsList.map((skill) => {
+            return (
+              <div key={skill.name}>
+                {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Familiar skill image'/>}
+                {skill.name}
+              </div>
+            )
+          })}
+        </SkillsGrid>
       <SubHeader>Languages</SubHeader>
-      <Text>
-      <SmallLanguage />
+      <SkillsGrid>
+        <SmallLanguage />
         {languageList.map((language) => {
           return (
             <div key={language.name}>
@@ -74,7 +74,7 @@ export const Skills = () => {
             </div>
           )
         })}
-      </Text>
+      </SkillsGrid>
     </Container>
   )
 }
