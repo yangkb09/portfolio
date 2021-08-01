@@ -32,6 +32,13 @@ const Image = styled.img`
 `
 const ReactIcon = styled.div`
   font-size: 4rem;
+  margin-top: 20px;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+`
+const IconName = styled.div`
+  text-align: center;
 `
 
 const SmallLanguage = styled(Language)`
@@ -48,7 +55,7 @@ export const Skills = () => {
             return (
               <div key={skill.name}>
                 {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Proficient skill image'/>}
-                {skill.name}
+                <IconName>{skill.name}</IconName>
               </div>
             )
           })}
@@ -59,18 +66,18 @@ export const Skills = () => {
             return (
               <div key={skill.name}>
                 {skill.reactIcon ? <ReactIcon>{skill.image}</ReactIcon> : <Image src={skill.image} alt='Familiar skill image'/>}
-                {skill.name}
+                <IconName>{skill.name}</IconName>
               </div>
             )
           })}
         </SkillsGrid>
       <SubHeader>Languages</SubHeader>
       <SkillsGrid>
-        <SmallLanguage />
         {languageList.map((language) => {
           return (
             <div key={language.name}>
-              {language.name}
+              <ReactIcon><SmallLanguage /></ReactIcon>
+              <IconName>{language.name}</IconName>
             </div>
           )
         })}

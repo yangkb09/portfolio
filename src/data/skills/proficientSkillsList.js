@@ -15,7 +15,7 @@ import sequelizeIcon from '@iconify-icons/file-icons/sequelize';
 
 
 const SmallExpress = styled(Express)`
-  max-width: 10%;
+  max-width: 20%;
 `
 
 const proficientSkillsList = [
