@@ -12,8 +12,8 @@ import { SiTravisci } from 'react-icons/si';
 
 const familiarSkillsList = [
   {name: 'Twitter API', image: <SiTwitter />, reactIcon: true},
-  {name: 'Google NLP API', image: <SiGoogle />, reactIcon: true},
-  {name: 'Google Cloud Platform', image: <SiGooglecloud />, reactIcon: true},
+  {name: 'Google NLP', image: <SiGoogle />, reactIcon: true},
+  {name: 'GCP', image: <SiGooglecloud />, reactIcon: true},
   {name: 'SQL', image: <AiOutlineConsoleSql />, reactIcon: true},
   {name: 'Heroku', image: <SiHeroku />, reactIcon: true},
   {name: 'Netlify', image: <SiNetlify />, reactIcon: true},
