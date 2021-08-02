@@ -2,7 +2,6 @@ import { SiTwitter } from 'react-icons/si';
 import { SiGoogle } from 'react-icons/si';
 import { SiGooglecloud } from 'react-icons/si';
 import { AiOutlineConsoleSql } from 'react-icons/ai'
-import { SiHeroku } from 'react-icons/si';
 import { SiNetlify } from 'react-icons/si';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import { SiBootstrap } from 'react-icons/si';
@@ -15,7 +14,6 @@ const familiarSkillsList = [
   {name: 'Google NLP', image: <SiGoogle />, reactIcon: true},
   {name: 'GCP', image: <SiGooglecloud />, reactIcon: true},
   {name: 'SQL', image: <AiOutlineConsoleSql />, reactIcon: true},
-  {name: 'Heroku', image: <SiHeroku />, reactIcon: true},
   {name: 'Netlify', image: <SiNetlify />, reactIcon: true},
   {name: 'Ant Design', image: <AiOutlineAntDesign />, reactIcon: true},
   {name: 'Bootstrap', image: <SiBootstrap />, reactIcon: true},

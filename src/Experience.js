@@ -1,8 +1,21 @@
 import React from 'react';
+import styled from 'styled-components/macro'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const SectionHeader = styled.div`
+  font-size: 3rem;
+  font-weight: bold;
+`
 
 export const Experience = () => {
   return (
-    <div>Placeholder for Experience</div>
+    <Container>
+      <SectionHeader>Experience</SectionHeader>
+    </Container>
   )
 }
 

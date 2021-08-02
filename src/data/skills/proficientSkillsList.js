@@ -9,6 +9,7 @@ import { SiReact } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
 import { SiGit } from 'react-icons/si';
 import { SiGithub } from 'react-icons/si';
+import { SiHeroku } from 'react-icons/si';
 
 import { Icon, InlineIcon } from '@iconify/react';
 import sequelizeIcon from '@iconify-icons/file-icons/sequelize';
@@ -30,6 +31,7 @@ const proficientSkillsList = [
   {name: 'Redux', image: <SiRedux />, reactIcon: true},
   {name: 'Git', image: <SiGit />, reactIcon: true},
   {name: 'GitHub', image: <SiGithub />, reactIcon: true},
+  {name: 'Heroku', image: <SiHeroku />, reactIcon: true}
 ]
 
 export default proficientSkillsList;
