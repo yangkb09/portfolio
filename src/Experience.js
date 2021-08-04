@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro'
+import experienceData from './data/experienceData'
 
 const Container = styled.div`
   display: flex;
